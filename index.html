@@ -39,3 +39,23 @@
 </body>
 
 </html>
+<script>
+    // Crear estrellas aleatorias
+    const numStars = 100; // Número de estrellas a crear
+    for (let i = 0; i < numStars; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+        document.body.appendChild(star);
+
+        // Posicionar cada estrella aleatoriamente
+        const x = Math.random() * window.innerWidth;
+        const y = Math.random() * window.innerHeight;
+        const delay = Math.random() * 2;
+        const duration = Math.random() * 2 + 2;
+
+        star.style.left = `${x}px`;
+        star.style.top = `${y}px`;
+        star.style.animationDelay = `${delay}s`;
+        star.style.animationDuration = `${duration}s`;
+    }
+</script>
