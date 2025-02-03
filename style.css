@@ -105,3 +105,7 @@ button:hover {
         opacity: 0;
     }
 }
+button:active {
+    transform: translate(10px, 10px); /* Mueve el botón 10px a la derecha y 10px hacia abajo cuando se presiona */
+    transition: transform 0.2s ease-in-out; /* Suaviza el movimiento */
+}
