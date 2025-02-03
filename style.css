@@ -45,7 +45,7 @@ button:hover {
 }
 
 /* Estilos para las estrellas */
-estrellas: {
+star: {
     position: absolute;
     width: 2px;
     height: 2px;
