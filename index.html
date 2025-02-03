@@ -1,59 +1,51 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>¿Quieres ser mi San Valentín?</title>
-
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
-
-    <div id="estrellas"></div> <!-- Cielo estrellado -->
+    <div id="estrellas"></div> <!-- Cielo estrellado (ahora utilizamos este contenedor) -->
 
     <div class="container">
-
         <h1>¿Quieres ser mi San Valentín? ❤️</h1>
-
         <button id="yesButton">Sí ❤️</button>
-
         <button id="noButton">No 💔</button>
-
     </div>
 
     <div id="fireworks-container"></div> <!-- Contenedor de fuegos artificiales -->
 
     <!-- Reproductor de audio oculto -->
-
     <audio id="romanticSong" src="the-beginning-the-middle-the-end.mp3"></audio>
 
     <script src="script.js"></script>
 
+    <script>
+        // Crear estrellas aleatorias
+        const numStars = 100; // Número de estrellas a crear
+        const estrellasContainer = document.getElementById('estrellas'); // Usar el contenedor de estrellas
+
+        for (let i = 0; i < numStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            estrellasContainer.appendChild(star); // Agregar la estrella al contenedor
+
+            // Posicionar cada estrella aleatoriamente
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight;
+            const delay = Math.random() * 2;
+            const duration = Math.random() * 2 + 2;
+
+            star.style.left = `${x}px`;
+            star.style.top = `${y}px`;
+            star.style.animationDelay = `${delay}s`;
+            star.style.animationDuration = `${duration}s`;
+        }
+    </script>
+</body>
+
 </html>
-<script>
-    // Crear estrellas aleatorias
-    const numStars = 100; // Número de estrellas a crear
-    for (let i = 0; i < numStars; i++) {
-        const star = document.createElement('div');
-        star.classList.add('star');
-        document.body.appendChild(star);
-
-        // Posicionar cada estrella aleatoriamente
-        const x = Math.random() * window.innerWidth;
-        const y = Math.random() * window.innerHeight;
-        const delay = Math.random() * 2;
-        const duration = Math.random() * 2 + 2;
-
-        star.style.left = `${x}px`;
-        star.style.top = `${y}px`;
-        star.style.animationDelay = `${delay}s`;
-        star.style.animationDuration = `${duration}s`;
-    }
-</script>
