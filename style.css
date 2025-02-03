@@ -1,15 +1,5 @@
 /* Estilos para el fondo con cielo estrellado */
-    body {
-    
-    background: url('https://cdn.pixabay.com/photo/2015/09/18/19/03/earth-941900_960_720.jpg') no-repeat center center fixed;
-    background-size: cover;
-    font-family: 'Arial', sans-serif;
-    margin: 10;
-    padding: 10;
-    height: 100vh;
-    overflow: hidden;
-    color: 0000ff;
-    }
+body {
     background: url('https://cdn.pixabay.com/photo/2016/11/29/09/14/star-1867239_960_720.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Arial', sans-serif;
@@ -97,10 +87,6 @@ button:hover {
         opacity: 1;
     }
     50% {
-          {
-    background-color: black; /* Establece el fondo como negro */
-    color: white; /* Asegura que el texto sea blanco para que sea visible sobre el fondo negro */
-        }
         transform: scale(1) translateY(-200px);
         opacity: 0.5;
     }
@@ -108,8 +94,4 @@ button:hover {
         transform: scale(0) translateY(-300px);
         opacity: 0;
     }
-}
-button:active {
-    transform: translate(10px, 10px); /* Mueve el botón 10px a la derecha y 10px hacia abajo cuando se presiona */
-    transition: transform 0.2s ease-in-out; /* Suaviza el movimiento */
 }
