@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Quieres ser mi San Valentín?</title>
+    <!-- Vinculamos el archivo de estilos CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div id="estrellas"></div> <!-- Cielo estrellado (ahora utilizamos este contenedor) -->
+    <!-- Contenedor de las estrellas (cielo estrellado) -->
+    <div id="estrellas"></div>
 
     <div class="container">
         <h1>¿Quieres ser mi San Valentín? ❤️</h1>
@@ -17,15 +19,17 @@
         <button id="noButton">No 💔</button>
     </div>
 
-    <div id="fireworks-container"></div> <!-- Contenedor de fuegos artificiales -->
+    <!-- Contenedor de fuegos artificiales -->
+    <div id="fireworks-container"></div>
 
     <!-- Reproductor de audio oculto -->
     <audio id="romanticSong" src="the-beginning-the-middle-the-end.mp3"></audio>
 
+    <!-- Vinculamos el archivo de JavaScript -->
     <script src="script.js"></script>
 
     <script>
-        // Crear estrellas aleatorias
+        // Crear estrellas aleatorias dentro del contenedor de estrellas
         const numStars = 100; // Número de estrellas a crear
         const estrellasContainer = document.getElementById('estrellas'); // Usar el contenedor de estrellas
 
