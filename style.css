@@ -1,6 +1,6 @@
 /* Estilos para el fondo con cielo estrellado */
 body {
-    body {
+
     background: url('https://cdn.pixabay.com/photo/2015/09/18/19/03/earth-941900_960_720.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Arial', sans-serif;
@@ -97,6 +97,10 @@ button:hover {
         opacity: 1;
     }
     50% {
+          {
+    background-color: black; /* Establece el fondo como negro */
+    color: white; /* Asegura que el texto sea blanco para que sea visible sobre el fondo negro */
+        }
         transform: scale(1) translateY(-200px);
         opacity: 0.5;
     }
