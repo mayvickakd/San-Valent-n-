@@ -1,5 +1,5 @@
 /* Estilos para el fondo con cielo estrellado */
-body {
+    body {
     
     background: url('https://cdn.pixabay.com/photo/2015/09/18/19/03/earth-941900_960_720.jpg') no-repeat center center fixed;
     background-size: cover;
